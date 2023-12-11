@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MP Cafe</title>
     <link rel="stylesheet" href="../styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
   </head>
   <body>
     <header>
@@ -16,19 +20,40 @@
         <p><a href="#home">Merah Putih Cafe</a></p>
       </div>
       <div class="navbar">
-        <a href="#home">Beranda</a>
-        <a href="#menu">Menu</a>
-        <a href="#about">Tentang Kami</a>
+        <a class="menuItem" href="#home">Beranda</a>
+        <a class="menuItem" href="#menu">Menu</a>
+        <a class="menuItem" href="#about">Tentang Kami</a>
       </div>
-      <p>burgermenu</p>
+      <button class="stacked">
+        <span class="material-symbols-outlined" id="hamburger"> menu </span>
+        <span class="material-symbols-outlined" id="close"> close </span>
+      </button>
     </header>
     <main>
       <div class="home" id="home">
         <img src="../images/mp.jpeg" alt="" />
-        <h1>Merah Putih Cafe</h1>
-        <p>Jl. Abdul Hakim, No.48, Medan, Sumatera Utara</p>
-        <p><a href="#menu">Pesan Sekarang</a></p>
+        <div class="tit">
+          <h1>Merah Putih Cafe</h1>
+          <p class="almt">Jl. Abdul Hakim, No.48, Medan, Sumatera Utara</p>
+          <br />
+          <p class="lnk">
+            <a href="#menu">
+              <span class="material-symbols-outlined" id="arrow-right">
+                arrow_circle_right Pesan Sekarang</span
+              >
+            </a>
+          </p>
+        </div>
+      </div>
+      <div class="menu" id="menu">
+        <h1>MENU</h1>
+        <p>Silahkan pesan menu anda</p>
+      </div>
+      <div class="about" id="about">
+        <h1>Tentang Kami</h1>
+        <p>tentang kami adalah</p>
       </div>
     </main>
+    <script src="../scripts/scripts.js"></script>
   </body>
 </html>
