@@ -52,12 +52,11 @@ header .logo {
 }
 .navbar {
   position: fixed;
-  transform: translateX(100%);
+  transform: translateX(200%);
   transition: transform 0.2s;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  height: 100vh;
+  width: 50%;
+  margin-top: -10px;
   z-index: 99;
   background: rgba(0, 0, 0, 0.8);
   color: white;
@@ -76,7 +75,7 @@ header .logo {
   text-decoration: underline;
 }
 .showMenu {
-  transform: translateX(50%);
+  transform: translateX(100%);
 }
 main {
   display: block;
@@ -115,15 +114,39 @@ main {
   padding-top: 90px;
 }
 /* TABLET */
-@media (max-width: 758px) {
+@media (min-width: 768px) {
   html {
-    font-size: 160%;
+    font-size: larger;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .navbar {
+    position: static;
+    transform: none;
+    display: inline;
+    z-index: auto;
+    height: auto;
+    width: auto;
+    padding: 0;
+    margin: auto 0px;
+    background: none;
+    justify-content: right;
+    font-size: 10px;
+  }
+  .menuItem {
+    display: inline;
+    color: black;
+  }
+  .stacked {
+    display: none;
   }
 }
 
 /* Laptop */
-@media (max-width: 960px) {
+@media (min-width: 992px) {
   html {
-    font-size: 150%;
+    font-size: x-large;
   }
 }
