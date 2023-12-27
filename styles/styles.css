@@ -108,6 +108,35 @@ main {
 .menu {
   min-height: 100vh;
   padding-top: 90px;
+  margin: 10px;
+}
+.menu h1,
+.menu p {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
+.listmenuss {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px;
+}
+
+.menuss {
+}
+.menu-img {
+  width: 100px;
+  height: 100px;
+}
+.quant {
+  display: flex;
+  justify-content: space-between;
+  height: 20px;
+  align-items: center;
+}
+.quant p {
+  margin: 5px;
 }
 .about {
   min-height: 100vh;
@@ -138,9 +167,25 @@ main {
   .menuItem {
     display: inline;
     color: black;
+    margin-left: -2px;
   }
   .stacked {
     display: none;
+  }
+  .home {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 75%;
+  }
+  .home img {
+    margin: auto;
+  }
+  .home .tit {
+    width: 50%;
+    text-align: left;
+    margin: auto;
+    padding-left: 20px;
   }
 }
 

@@ -30,6 +30,7 @@
       </button>
     </header>
     <main>
+      <!-- HOME -->
       <div class="home" id="home">
         <img src="../images/mp.jpeg" alt="" />
         <div class="tit">
@@ -45,10 +46,54 @@
           </p>
         </div>
       </div>
+      <!-- MENU -->
       <div class="menu" id="menu">
         <h1>MENU</h1>
         <p>Silahkan pesan menu anda</p>
+        <div class="menu-list">
+          <h3>Makanan</h3>
+          <div class="menu-list-com" style="list-style-position: inside">
+            <!-- <form action=""> -->
+            <ul class="listmenuss">
+              <!-- <label for="rbb"> -->
+              <img src="../images/rbb.jpeg" class="menu-img" alt="" />
+              <li class="menuss">Roti Bakar Bandung</li>
+              <div class="quant">
+                <button class="plus" onclick="sub('rbb')">
+                  <span class="material-symbols-outlined"> remove </span>
+                </button>
+                <p class="rbb" id="rbb">0</p>
+                <button class="minus" onclick="add('rbb')">
+                  <span class="material-symbols-outlined"> add </span>
+                </button>
+              </div>
+              <!-- </label> -->
+            </ul>
+            <ul class="listmenuss">
+              <!-- <label for="rbb"> -->
+              <img src="../images/kg.jpeg" class="menu-img" alt="" />
+              <li class="menuss">Kentang Goreng</li>
+              <div class="quant">
+                <button class="plus" onclick="sub('kg')">
+                  <span class="material-symbols-outlined"> remove </span>
+                </button>
+                <p class="rbb" id="kg">0</p>
+                <button class="minus" onclick="add('kg')">
+                  <span class="material-symbols-outlined"> add </span>
+                </button>
+              </div>
+              <!-- </label> -->
+            </ul>
+            <!-- </form> -->
+          </div>
+        </div>
       </div>
+      <ul>
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+      </ul>
+      <!-- ABOUT -->
       <div class="about" id="about">
         <h1>Tentang Kami</h1>
         <p>tentang kami adalah</p>

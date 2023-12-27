@@ -21,3 +21,25 @@ stacked.addEventListener("click", toggleMenu);
 menuItems.forEach(function (menuItem) {
   menuItem.addEventListener("click", toggleMenu);
 });
+
+const plus = document.querySelector(".plus");
+const minus = document.querySelector(".minus");
+const rbb = document.querySelector(".rbb");
+
+let quantity = 0;
+
+function add(id) {
+  quantity++;
+  updateQuantity(id);
+}
+
+function sub(id) {
+  if (quantity > 0) {
+    quantity--;
+    updateQuantity(id);
+  }
+}
+
+function updateQuantity(id) {
+  document.getElementById(id).innerText = quantity;
+}
